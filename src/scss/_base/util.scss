@@ -1,0 +1,68 @@
+@import './var';
+
+//占位文本颜色
+@mixin placeholder($color: $default-input-placeholder-color) {
+  &::placeholder {
+    color: $color;
+  }
+}
+//active
+@mixin active-bg($radius: 0) {
+  &:active::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: $radius;
+  }
+}
+button {
+  @include active-bg;
+}
+
+//圆角半径
+@mixin border-radius($radius: $default-border-radius) {
+  border-radius: $radius;
+}
+//阴影
+@mixin box-shadow($shadow: $default-box-shadow) {
+  box-shadow: $shadow;
+}
+//超出隐藏
+@mixin ellipsis-x($row-num: 1) {
+  @if $row-num!=1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $row-num;
+    -webkit-box-orient: vertical;
+  } @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+//清除浮动
+@mixin clearfix() {
+  &:before,
+  &:after {
+    display: table;
+    content: '';
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//size
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
+
+//计算rem值
+@function rem($val) {
+  @return $val / $baseFontSize + rem;
+}

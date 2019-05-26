@@ -1,0 +1,20 @@
+extends ../template/layout.pug
+
+block content
+    a(href="./test.html") test.htm
+    h2 pug 使用和加载公共模板
+    each val in (new Array(5))
+      include ../template/test.pug
+
+    h2 图片相对路径和绝对路径
+
+    img(width="100" src=require('../images/2.jpg'))
+    img(width="100" src="/resource/images/timg.png")
+
+    h2 Vue示例
+    div#app
+      test
+
+block script
+  script.
+    console.log(123)

@@ -1,0 +1,121 @@
+@import './theme';
+
+//设计图宽度
+$reality-width: 750;
+//rem转换尺寸
+$baseFontSize: $reality-width / 10;
+//栅格默认列数
+$col-num:24;
+//栅格容器宽度
+$container-width:1024px;
+//列宽
+$col-one-width: 100% / $col-num;
+
+
+/* 尺寸 */
+// ========================================================================
+
+// 间距
+$space-s: 8px;
+$space-m: 16px;
+$space-lg: 24px;
+$space-big: 32px;
+
+
+
+//默认圆角半径
+$default-border-radius: 4px;
+
+/* 文字 */
+// ========================================================================
+
+// 移动端
+// $font-size-sm: 12px;    //最小说明文本
+// $font-size-s: 14px;   //页面辅助信息
+// $default-font-size: 16px;
+// $font-size-big: 30px;    //特大字体
+// $font-size-lg: 20px;    //标题
+
+
+// PC
+$font-size-s: 12px;
+$default-font-size: 14px;
+$font-size-mid: 16px;
+$font-size-lg: 20px;
+$font-size-big: 30px;
+$font-size-t: 46px;
+
+
+//默认字体
+$font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$code-family: Consolas, Menlo, Courier, monospace;
+$number-family: tabular-nums;
+
+
+/* 动画 */
+// ========================================================================
+$default-transtion: .3s;
+
+
+
+/* z-index */
+// ========================================================================
+$z-index: 1000;
+$z-index-drawer: 1200;
+$z-index-modal: 1400;
+$z-index-tooltip: 1600;
+
+
+/* 颜色 */
+// ========================================================================
+
+// 中性色
+$b-title: rgba(0,0,0,0.9);    // Title
+$b-primary: rgba(0,0,0,0.75);    // 主要文本色
+$b-second: rgba(0,0,0,0.45);    // 次要文本色
+$b-disable: rgba(0,0,0,0.25);    // 禁用
+$b-border: rgba(0,0,0,0.15);    // 边框/分割线
+$b-bg: rgba(0,0,0,0.04);    // 背景色
+
+$w-title: rgba(255,255,255,1);
+$w-primary: rgba(255,255,255,.85);
+$w-second: rgba(255,255,255,.65);
+$w-disable: rgba(255,255,255,.45);
+$w-border: rgba(255,255,255,.25);
+$w-bg: rgba(255,255,255,.09);
+
+
+//暗提示色
+$color-tips: $b-disable;
+//弹层蒙版色
+$color-mask: $b-disable;
+
+//信息
+$color-info: #2E88FA;
+//成功
+$color-success: #13CE66;
+//错误，警示色
+$color-error: #FF4949;
+//重点提醒色
+$color-warn: #FFC82C;
+
+//a连接默认色
+$a-color: $geekblue-6;
+$a-hover-color: $geekblue-4;
+
+//主题色(默认 色板第6个、浅色、深色)
+$theme-color: $cyan-6;
+$theme-color-light: $cyan-4;
+$theme-color-dark: $cyan-8;
+
+//默认背景色
+$body-background: $b-bg;
+
+//默认placeholder颜色
+$default-input-placeholder-color: $b-second;
+
+//边框
+$border-color: $b-border;
+
+//默认元素阴影
+$default-box-shadow: 0 2px 8px $b-border;

@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title #{htmlWebpackPlugin.options.title}
+    include ./meta_link
+    block metas
+  
+  body
+    block header
+      div#header header
+    
+    block content
+
+    block footer
+      div#footer footer
+
+  block script
